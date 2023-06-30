@@ -1,66 +1,66 @@
-body{
-    margin: 0;
-    font-family: 'Trade Winds', cursive;
-    background-color: #1d2025;
+body {
+  margin: 0;
+  font-family: "Trade Winds", cursive;
+  background-color: #1d2025;
 }
 
-.imagenes-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.imagenes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.imagenes-container .imagen{
-    position: relative;
-    margin-right: -20px;
-    display: inline-flex;
-    flex-direction: column;
+.imagen {
+  position: relative;
+  margin-right: -20px;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.imagenes-container .imagen img {
-    width: 250px;
-    height: 250px;
-    transition: transform 0.5s ease-in-out;
-    margin: 40px;
+.imagen img {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.5s ease-in-out;
+  margin: 40px;
 }
 
-.imagenes-container .imagen .nombre {
-    font-size: 1.8rem;
-    position: absolute;
-    color: aliceblue;
-    display: none;
-    min-width: 100px;
-    width: 100px;
-    top: -55px;
-    left: calc(25%);
+.nombre {
+  font-size: 1.8rem;
+  position: absolute;
+  color: aliceblue;
+  display: none;
+  min-width: 100px;
+  width: 100px;
+  top: -55px;
+  left: calc(25%);
 }
 
-.imagenes-container .imagen .nombre .text {
-    display: inline-block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 150px;
-    text-align: center;
-    box-sizing: border-box;
+.text {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.imagenes-container .imagen:hover .nombre {
-    display: inline-block;
+.imagen:hover .nombre {
+  display: inline-block;
 }
 
-.imagenes-container .imagen:hover img {
-    transform: translateY(-20px);
+.imagen:hover img {
+  transform: translateY(-20px);
 }
 
 @media (max-width: 680px) {
-    .imagenes-container {
-        flex-direction: column;
-        height: 200vh;
-    }
+  .imagenes-container {
+    flex-direction: column;
+    height: 200vh;
+  }
 
-    .imagenes-container .imagen .nombre {
-        top: -20px;
-    }
+  .nombre {
+    top: -20px;
+  }
 }
